@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #7f1df7;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 767px){
+  .App{
+    position: relative;
+    display: block;
+    text-align: center;
+    
+  }
+}

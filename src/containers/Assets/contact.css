@@ -1,0 +1,84 @@
+.contact-container {
+    margin: 200px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.8s ease-in-out;
+}
+
+.contact-head {
+    margin-top: 150px;
+    margin-left: 100px;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.contact-links {
+    margin-top: 50px;
+    margin-left: 150px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.links {
+    padding: 10px;
+    color: white;
+    width: 90%;
+    align-items: center;
+    margin: 15px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.l-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.links:hover {
+    transform: scale(1.1);
+    color: black;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 5px rgb(223, 223, 233);
+}
+
+.l-icons > h4 {
+    margin-left: 20px;
+}
+
+.contact-container:hover,
+.contact-container:focus-within,
+.contact-container:hover .contact-head,
+.contact-container:focus-within .contact-head,
+.contact-container:hover .contact-links,
+.contact-container:focus-within .contact-links,
+.contact-container:hover .links {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+    .contact-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-head,
+    .contact-links {
+        margin-left: 20px;
+    }
+
+    .links {
+        width: 80%;
+        transition: none;
+    }
+}

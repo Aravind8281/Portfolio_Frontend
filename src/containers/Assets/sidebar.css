@@ -1,0 +1,59 @@
+.s-container {
+  width: 100px;
+  position: fixed;
+  display: block;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  bottom: 0;
+}
+
+.c-container {
+  padding-top: 250px;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.i-container {
+  width: 75px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 5px rgba(168, 98, 255, 0.981);
+}
+
+.i-container:hover {
+  transform: scale(1.1);
+}
+
+.icon-name {
+  font-size: small;
+}
+
+@media (max-width: 767px) {
+  .s-container {
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Set background color with transparency */
+    backdrop-filter: blur(10px); /* Add a blur effect to create glassmorphism */
+  }
+
+  .c-container {
+    display: flex;
+    padding-top: 0;
+    align-items: flex-start;
+    backdrop-filter: blur(10px); /* Add a blur effect to create glassmorphism */
+  }
+
+  .i-container {
+    margin-left: 0;
+  }
+}

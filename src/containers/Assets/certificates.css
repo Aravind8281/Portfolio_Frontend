@@ -1,0 +1,57 @@
+.cert-container{
+    width: 100;
+    display: flex;
+    color: white;
+}
+.certs{
+    margin-left: 100px;
+}
+.load{
+    color: white;
+    font-size: xx-large;
+    word-spacing: 2px;
+    margin: 150px;
+}
+.cert-imgs {
+    width:350px;
+    height:232px;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(246, 233, 235);
+    border: 9px solid rgb(76, 49, 49);
+    background-image: url(https://i.pinimg.com/originals/c1/f4/6d/c1f46d249a3aec5e66cf7ff43164b30d.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cert-imgs:hover{
+    transform: scale(1.09);
+    box-shadow: 1px 1px 6px 3px rgb(220, 220, 230);
+}
+.img-open{
+    width:800px;
+}
+.Model{
+    width: 800px;
+    margin-left: 350px;
+    margin-top: 100px;
+}
+.img-close{
+    background-color: red;
+    padding: 3px;
+    color: white;
+    width:50px;
+    height: 30px;
+    margin: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.img-close{
+    transform: scale(1);
+}
+@media(max-width:767px){
+    .certs{
+        margin: 0;
+    }
+}
