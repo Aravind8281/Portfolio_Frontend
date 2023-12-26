@@ -54,4 +54,7 @@
     .certs{
         margin: 0;
     }
+    .scroll-container{
+        margin-bottom: 100px;
+    }
 }
